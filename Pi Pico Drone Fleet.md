@@ -1,8 +1,9 @@
 # Pi Pico Drone Fleet Project  
 August 6, 2025
+
 Ember Ipek
 
-## A New Controller  
+# A New Controller  
 August 6, 2025
 
 I had an idea for an AI-controlled drone fleet that could fly in different formations and dynamically switch between defensive and offensive strategies depending on surroundings. Unsure of where to start, I just ordered the cheapest drone I could find on Amazon, the HS210. I opened it up to find a PAN7420S7FA chip, which I found out is a 2.4 GHz Bluetooth transceiver. I figured I could interface with it using a Pi Pico W mounted onto the drone and route the 3.7 V LiPo battery to power both the Pico and the drone. I also picked up an HC-SR04 ultrasonic sensor, powered it through the LiPo battery, and connected the trigger pin to GP2 and the echo pin to GP3. I soldered this circuit onto a protoboard and had trouble getting readings from the sensor, but the drone was receiving power. Building the circuit on the breadboard, I was able to get readings and found that my soldering needed reworking.
