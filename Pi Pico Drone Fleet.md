@@ -5,16 +5,8 @@ Ember Ipek
 ## A New Controller  
 August 6, 2025
 
-I had an idea for an AI-controlled drone fleet that could fly in different formations and dynamically switch between defensive and offensive strategies depending on surroundings. Unsure of where to start, I just ordered the cheapest drone I could find on Amazon, the HS210.
+I had an idea for an AI-controlled drone fleet that could fly in different formations and dynamically switch between defensive and offensive strategies depending on surroundings. Unsure of where to start, I just ordered the cheapest drone I could find on Amazon, the HS210. I opened it up to find a PAN7420S7FA chip, which I found out is a 2.4 GHz Bluetooth transceiver. I figured I could interface with it using a Pi Pico W mounted onto the drone and route the 3.7 V LiPo battery to power both the Pico and the drone. I also picked up an HC-SR04 ultrasonic sensor, powered it through the LiPo battery, and connected the trigger pin to GP2 and the echo pin to GP3. I soldered this circuit onto a protoboard and had trouble getting readings from the sensor, but the drone was receiving power. Building the circuit on the breadboard, I was able to get readings and found that my soldering needed reworking.
 
-I opened it up to find a **PAN7420S7FA chip**, which I found out is a 2.4 GHz Bluetooth transceiver. I figured I could interface with it using a Pi Pico W mounted onto the drone and route the 3.7 V LiPo battery to power both the Pico and the drone.
+The next step is to use a regular Raspberry Pi to act as a “flight controller” for the Pico-modified drone to implement a collision avoidance system. This would involve sending data packets to and from the Pico W using Wi-Fi. Once this is working, perhaps I would like to add an accelerometer and gyroscope as a DIY IMU to facilitate pitch and yaw control.
 
-I also picked up an **HC-SR04 ultrasonic sensor**, powered it through the LiPo battery, and connected the trigger pin to GP2 and the echo pin to GP3. I soldered this circuit onto a protoboard and had trouble getting readings from the sensor, but the drone was receiving power.
-
-Building the circuit on the breadboard, I was able to get readings and found that my soldering needed reworking.
-
-The next step is to use a regular Raspberry Pi to act as a **“flight controller”** for the Pico-modified drone to implement a collision avoidance system. This would involve sending data packets to and from the Pico W using Wi-Fi.
-
-Once this is working, perhaps I would like to add an accelerometer and gyroscope as a DIY IMU to facilitate pitch and yaw control.
-
-**Potential issues:** Wi-Fi lag, processing power limitations, weight.
+Potential issues: Wi-Fi lag, processing power limitations, weight.
