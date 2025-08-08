@@ -1,11 +1,9 @@
 # Pi Pico Drone Fleet Project  
-*August 6, 2025*  
-*Ember Ipek*
-
----
+August 6, 2025
+Ember Ipek
 
 ## A New Controller  
-*August 6, 2025*
+August 6, 2025
 
 I had an idea for an AI-controlled drone fleet that could fly in different formations and dynamically switch between defensive and offensive strategies depending on surroundings. Unsure of where to start, I just ordered the cheapest drone I could find on Amazon, the HS210.
 
