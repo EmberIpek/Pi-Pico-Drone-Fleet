@@ -11,3 +11,10 @@ I had an idea for an AI-controlled drone fleet that could fly in different forma
 The next step is to use a regular Raspberry Pi to act as a “flight controller” for the Pico-modified drone to implement a collision avoidance system. This would involve sending data packets to and from the Pico W using Wi-Fi. Once this is working, perhaps I would like to add an accelerometer and gyroscope as a DIY IMU to facilitate pitch and yaw control.
 
 Potential issues: Wi-Fi lag, processing power limitations, weight.
+
+# Return of the RPi
+August 11, 2025
+
+Code updated to pack and send the data and checksum from the HC-SR04 sensor to the RPi using UDP. Set up static IP for RPi for wifi communication. Next steps: unpack data on Pi side and find out how to interface with the chip to send flight commands as a DIY flight controller. Packets may need to be timestamped.
+
+Documentation to read: network.WLAN(), active(), connect(), isconnected(), ifconfig(), socket(), bind(), sendto(), and recvfrom()
