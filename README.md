@@ -1,6 +1,6 @@
 # Pi Pico Drone Fleet Project
-## 8/6/2025
-## Ember Ipek
+### 8/6/2025
+### Ember Ipek
 
 ---
 
@@ -15,7 +15,7 @@ MPU6050 or MPU9250?
 
 ---
 
-# Return of the RPi
+## Return of the RPi
 **Handling data transfer and defining a protocol**
 
 8/11/2025
@@ -24,7 +24,7 @@ Documentation to read: network.WLAN(), active(), connect(), isconnected(), ifcon
 
 ---
 
-# Attack of the Drones
+## Attack of the Drones
 **First attempts at autonomy**
 
 4/28/2026
