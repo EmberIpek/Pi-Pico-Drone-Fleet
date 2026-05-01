@@ -45,6 +45,7 @@ Received 17 bytes from ('172.20.10.9', 53859)
 Received data is laggy, must synchronize data. Controller opened up, and found chip labeled 2512CTb, push buttons, and analog stick inputs. Measure input pin voltages to figure out operation of controller. Trigger buttons found to be active low with Vcc pin at 3.3V. Can connect button signal to a GPIO pin on Pi and set as input. To simulate button press, switch pin to output and pull LOW, and switch back to input. Right analog stick controls lateral and forward/backward movement: can use this for collision avoidance. VxJ1 pins sit at 58.5mV center and range from 1mV full right input – 80mV full left input. Likewise, VyJ1 rests at 58.5mV and ranges from 1mV up input – 80mV down. Can use PWM to simulate voltage level changes on joystick pins? Test output from PWM pins first.
 Soldered wires onto controller. Test RPi control with PWM. Issue: can add to voltage, but how to subtract? Solution: raise ground. Using pin 2 to control forward motion of drone until obstacle detected. 1kHz frequency, duty cycle 0.2 = 6.6mV. Verify PWM voltages with multimeter first. Measured duty cycle 0 is 50mV. Pull-down resistor did nothing. Added 20M resistors in series, duty cycle 0 output is now ~18mV, duty cycle 0.2 is ~30mV, voltage differential is 12mV. Fast response from UDP receiver side for changes in distance.
 
+UDP send/receive video:
 [![Watch the video](https://img.youtube.com/vi/cnNgMN9ZORI/default.jpg)](https://youtu.be/cnNgMN9ZORI)
 
 
