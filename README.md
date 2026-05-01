@@ -46,6 +46,7 @@ Received data is laggy, must synchronize data. Controller opened up, and found c
 Soldered wires onto controller. Test RPi control with PWM. Issue: can add to voltage, but how to subtract? Solution: raise ground. Using pin 2 to control forward motion of drone until obstacle detected. 1kHz frequency, duty cycle 0.2 = 6.6mV. Verify PWM voltages with multimeter first. Measured duty cycle 0 is 50mV. Pull-down resistor did nothing. Added 20M resistors in series, duty cycle 0 output is now ~18mV, duty cycle 0.2 is ~30mV, voltage differential is 12mV. Fast response from UDP receiver side for changes in distance.
 
 UDP send/receive video:
+
 [![Watch the video](https://img.youtube.com/vi/cnNgMN9ZORI/default.jpg)](https://youtu.be/cnNgMN9ZORI)
 
 
